@@ -1,0 +1,55 @@
+@media(max-width: 900px) {
+
+    .logo {
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        margin-right: 1.5rem;
+    }
+
+    nav #mainMenu {
+        height: 100vh;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        background-color: #fff;
+        inset: 0;
+        transition: top 1s ease 0s;
+        z-index: 1000;
+    }
+
+    nav #mainMenu #closeMenu {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+    }
+
+    nav #openMenu {
+        display: block;
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+
+    nav #closeMenu {
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: #111;
+    }
+
+    nav #mainMenu li {
+        margin-bottom: 2.5rem;
+    }
+
+    nav #mainMenu li a {
+        font-size: 2rem;
+        color: #111;
+    }
+
+    nav #mainMenu li a:hover {
+        color: #111;
+    }
+}
