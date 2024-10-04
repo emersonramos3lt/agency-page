@@ -1,0 +1,171 @@
+@media(max-width: 940px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    .logo {
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        margin-right: 1.5rem;
+    }
+
+    nav #mainMenu {
+        height: 100vh;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        background-color: #fff;
+        inset: 0;
+        transition: top 1s ease 0s;
+        z-index: 1000;
+    }
+
+    nav #mainMenu #closeMenu {
+        display: block;
+        position: absolute;
+        top: 37px;
+        right: 25px;
+    }
+
+    nav #openMenu {
+        display: block;
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+
+    nav #closeMenu {
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: #111;
+    }
+
+    nav #mainMenu li {
+        margin-bottom: 2.5rem;
+    }
+
+    nav #mainMenu li a {
+        font-size: 2rem;
+        color: #111;
+    }
+
+    nav #mainMenu li a:hover {
+        color: #111;
+    }
+
+    /* SECTION HEADER */
+    .section-header {
+        max-width: 350px;
+        padding-top: 9rem;
+    }
+    
+    .section-header h1 {
+        font-size: 2rem;
+        padding-top: 4rem;
+    }
+
+    /* SERVICES */
+    #services {
+        max-width: 370px;
+        padding-top: 5rem;
+    }
+
+    #services h2 {
+        font-size: 2.3rem;
+    }
+
+    .column, .column-2 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .column-2 {
+        display: flex;
+    }
+
+    .column-2 .text {
+        order: 2;
+    }
+
+    .column-2 .icon-2 {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .column .icon, .column-2 .icon-2 {
+        max-width: 80%;
+        padding: 5rem;
+        margin-bottom: 4rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .column .icon i, .column-2 .icon-2 i {
+        font-size: 2.5rem;
+    }
+
+    /* ABOUT */
+    #about {
+        max-width: 350px;
+    }
+
+    #about h1 {
+        font-size: 2.5rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .parallax {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .parallax::before {
+        background-attachment: none;
+    }
+
+    /* PROJECTS */
+    #projects {
+        max-width: 370px;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #projects img {
+        height: 100%;
+        padding-bottom: 1rem;
+    }
+
+    /* CONTACT */
+    #contact form {
+        max-width: 350px;
+        padding-bottom: 7rem;
+    }
+
+    /* FOOTER */
+
+    .social {
+        height: 180px;
+        flex-flow: column wrap;
+    }
+
+    .social .icons i {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .copy {
+        max-width: 370px;
+    }
+}
